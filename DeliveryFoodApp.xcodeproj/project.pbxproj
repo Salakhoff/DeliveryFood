@@ -24,6 +24,7 @@
 		17041D2B2BEA20CF00AFA255 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17041D1E2BEA20CF00AFA255 /* Roboto-Regular.ttf */; };
 		17041D2C2BEA20CF00AFA255 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17041D1F2BEA20CF00AFA255 /* Roboto-Thin.ttf */; };
 		17041D2D2BEA20CF00AFA255 /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17041D202BEA20CF00AFA255 /* Roboto-ThinItalic.ttf */; };
+		17041D312BEA357D00AFA255 /* UIFont + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17041D302BEA357D00AFA255 /* UIFont + Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +34,6 @@
 		17041CEB2BE9192C00AFA255 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17041CEE2BE9192C00AFA255 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17041CF02BE9192C00AFA255 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		17041D122BEA138600AFA255 /* DeliveryFoodApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = DeliveryFoodApp.app; path = "/Users/salahov/Desktop/Developer/DeliveryFoodApp/build/Debug-iphoneos/DeliveryFoodApp.app"; sourceTree = "<absolute>"; };
 		17041D152BEA20CF00AFA255 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
 		17041D162BEA20CF00AFA255 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
 		17041D172BEA20CF00AFA255 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
@@ -46,6 +46,8 @@
 		17041D1E2BEA20CF00AFA255 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		17041D1F2BEA20CF00AFA255 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
 		17041D202BEA20CF00AFA255 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		17041D302BEA357D00AFA255 /* UIFont + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont + Extension.swift"; sourceTree = "<group>"; };
+		17041D322BEA375300AFA255 /* DeliveryFoodApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeliveryFoodApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,12 +65,14 @@
 			isa = PBXGroup;
 			children = (
 				17041CE12BE9192B00AFA255 /* DeliveryFoodApp */,
+				17041D322BEA375300AFA255 /* DeliveryFoodApp.app */,
 			);
 			sourceTree = "<group>";
 		};
 		17041CE12BE9192B00AFA255 /* DeliveryFoodApp */ = {
 			isa = PBXGroup;
 			children = (
+				17041D2E2BEA355800AFA255 /* Extensions */,
 				17041D132BEA209400AFA255 /* Resources */,
 				17041CE22BE9192B00AFA255 /* AppDelegate.swift */,
 				17041CE42BE9192B00AFA255 /* SceneDelegate.swift */,
@@ -115,6 +119,14 @@
 			path = Roboto;
 			sourceTree = "<group>";
 		};
+		17041D2E2BEA355800AFA255 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				17041D302BEA357D00AFA255 /* UIFont + Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,7 +146,7 @@
 			packageProductDependencies = (
 			);
 			productName = DeliveryFoodApp;
-			productReference = 17041D122BEA138600AFA255 /* DeliveryFoodApp.app */;
+			productReference = 17041D322BEA375300AFA255 /* DeliveryFoodApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -201,6 +213,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17041D312BEA357D00AFA255 /* UIFont + Extension.swift in Sources */,
 				17041CE72BE9192B00AFA255 /* ViewController.swift in Sources */,
 				17041CE32BE9192B00AFA255 /* AppDelegate.swift in Sources */,
 				17041CE52BE9192B00AFA255 /* SceneDelegate.swift in Sources */,
