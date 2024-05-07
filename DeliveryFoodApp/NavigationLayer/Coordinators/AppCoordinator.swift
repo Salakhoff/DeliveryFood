@@ -3,10 +3,11 @@ import UIKit
 /// Создание координатора, который будет использоваться со сценой
 final class AppCoordinator: Coordinator {
     
+    private let userStorage = UserStorage.shared
+    
     /// Показывается, какой VC будет показан
     override func start() {
-//        showOnboardingFlow() // Пока тестируем MainFlow
-        showMainFlow()
+        userStorage.passedOnboarding ? showMainFlow() : showMainFlow()
     }
     
     override func finish() {
@@ -101,6 +102,9 @@ extension AppCoordinator: CoordinatorFinishDelegate {
         switch childCoordinator.type {
         case .app:
             return
+        case.onboarding:
+            navigationController?.viewControllers.removeAll()
+            showMainFlow()
         default:
             navigationController?.popViewController(animated: false)
         }
