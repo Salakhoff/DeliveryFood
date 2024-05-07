@@ -5,8 +5,8 @@ final class AppCoordinator: Coordinator {
     
     /// Показывается, какой VC будет показан
     override func start() {
-//        showOnboardingFlow() // Пока тестируем MainFlow
-        showMainFlow()
+        showOnboardingFlow() // Пока тестируем MainFlow
+//        showMainFlow()
     }
     
     override func finish() {

@@ -39,6 +39,9 @@
 		17041D4E2BEA596D00AFA255 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17041D4D2BEA596D00AFA255 /* ListViewController.swift */; };
 		17041D502BEA597500AFA255 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17041D4F2BEA597500AFA255 /* ProfileViewController.swift */; };
 		17041D522BEA5A0300AFA255 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17041D512BEA5A0300AFA255 /* TabBarController.swift */; };
+		17041D562BEA6A4C00AFA255 /* OnboardingViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17041D552BEA6A4C00AFA255 /* OnboardingViewPresenter.swift */; };
+		17041D582BEA760300AFA255 /* OnboardingPartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17041D572BEA760300AFA255 /* OnboardingPartViewController.swift */; };
+		17041D5A2BEA7C0700AFA255 /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17041D592BEA7C0700AFA255 /* OnboardingModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +79,9 @@
 		17041D4D2BEA596D00AFA255 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		17041D4F2BEA597500AFA255 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		17041D512BEA5A0300AFA255 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		17041D552BEA6A4C00AFA255 /* OnboardingViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewPresenter.swift; sourceTree = "<group>"; };
+		17041D572BEA760300AFA255 /* OnboardingPartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPartViewController.swift; sourceTree = "<group>"; };
+		17041D592BEA7C0700AFA255 /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +106,7 @@
 		17041CE12BE9192B00AFA255 /* DeliveryFoodApp */ = {
 			isa = PBXGroup;
 			children = (
+				17041D532BEA692600AFA255 /* UILayer */,
 				17041D382BEA45F900AFA255 /* NavigationLayer */,
 				17041D132BEA209400AFA255 /* Resources */,
 				17041CE22BE9192B00AFA255 /* AppDelegate.swift */,
@@ -169,7 +176,6 @@
 		17041D392BEA461D00AFA255 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				17041CE62BE9192B00AFA255 /* OnboardingViewController.swift */,
 				17041D492BEA595800AFA255 /* HomeViewController.swift */,
 				17041D4B2BEA596500AFA255 /* OrderViewController.swift */,
 				17041D4D2BEA596D00AFA255 /* ListViewController.swift */,
@@ -191,6 +197,25 @@
 				17041D472BEA58B100AFA255 /* ProfileCoordinator.swift */,
 			);
 			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		17041D532BEA692600AFA255 /* UILayer */ = {
+			isa = PBXGroup;
+			children = (
+				17041D542BEA6A0000AFA255 /* Onboarding */,
+			);
+			path = UILayer;
+			sourceTree = "<group>";
+		};
+		17041D542BEA6A0000AFA255 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				17041CE62BE9192B00AFA255 /* OnboardingViewController.swift */,
+				17041D552BEA6A4C00AFA255 /* OnboardingViewPresenter.swift */,
+				17041D572BEA760300AFA255 /* OnboardingPartViewController.swift */,
+				17041D592BEA7C0700AFA255 /* OnboardingModel.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,8 +314,11 @@
 				17041D402BEA500300AFA255 /* OnboardingCoordinator.swift in Sources */,
 				17041D502BEA597500AFA255 /* ProfileViewController.swift in Sources */,
 				17041D372BEA417B00AFA255 /* AppColors.swift in Sources */,
+				17041D582BEA760300AFA255 /* OnboardingPartViewController.swift in Sources */,
+				17041D5A2BEA7C0700AFA255 /* OnboardingModel.swift in Sources */,
 				17041D442BEA589F00AFA255 /* OrderCoordinator.swift in Sources */,
 				17041CE52BE9192B00AFA255 /* SceneDelegate.swift in Sources */,
+				17041D562BEA6A4C00AFA255 /* OnboardingViewPresenter.swift in Sources */,
 				17041D462BEA58A800AFA255 /* ListCoordinator.swift in Sources */,
 				17041D4C2BEA596500AFA255 /* OrderViewController.swift in Sources */,
 				17041D422BEA588200AFA255 /* HomeCoordinator.swift in Sources */,
