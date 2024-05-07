@@ -25,6 +25,8 @@
 		17041D2C2BEA20CF00AFA255 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17041D1F2BEA20CF00AFA255 /* Roboto-Thin.ttf */; };
 		17041D2D2BEA20CF00AFA255 /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17041D202BEA20CF00AFA255 /* Roboto-ThinItalic.ttf */; };
 		17041D312BEA357D00AFA255 /* UIFont + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17041D302BEA357D00AFA255 /* UIFont + Extension.swift */; };
+		17041D352BEA3F7600AFA255 /* UIColor + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17041D342BEA3F7600AFA255 /* UIColor + Extension.swift */; };
+		17041D372BEA417B00AFA255 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17041D362BEA417B00AFA255 /* AppColors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,8 @@
 		17041D202BEA20CF00AFA255 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
 		17041D302BEA357D00AFA255 /* UIFont + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont + Extension.swift"; sourceTree = "<group>"; };
 		17041D322BEA375300AFA255 /* DeliveryFoodApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeliveryFoodApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		17041D342BEA3F7600AFA255 /* UIColor + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Extension.swift"; sourceTree = "<group>"; };
+		17041D362BEA417B00AFA255 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +76,6 @@
 		17041CE12BE9192B00AFA255 /* DeliveryFoodApp */ = {
 			isa = PBXGroup;
 			children = (
-				17041D2E2BEA355800AFA255 /* Extensions */,
 				17041D132BEA209400AFA255 /* Resources */,
 				17041CE22BE9192B00AFA255 /* AppDelegate.swift */,
 				17041CE42BE9192B00AFA255 /* SceneDelegate.swift */,
@@ -87,7 +90,9 @@
 		17041D132BEA209400AFA255 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				17041D2E2BEA355800AFA255 /* Extensions */,
 				17041D142BEA20A700AFA255 /* Fonts */,
+				17041D362BEA417B00AFA255 /* AppColors.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -123,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				17041D302BEA357D00AFA255 /* UIFont + Extension.swift */,
+				17041D342BEA3F7600AFA255 /* UIColor + Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -216,7 +222,9 @@
 				17041D312BEA357D00AFA255 /* UIFont + Extension.swift in Sources */,
 				17041CE72BE9192B00AFA255 /* ViewController.swift in Sources */,
 				17041CE32BE9192B00AFA255 /* AppDelegate.swift in Sources */,
+				17041D372BEA417B00AFA255 /* AppColors.swift in Sources */,
 				17041CE52BE9192B00AFA255 /* SceneDelegate.swift in Sources */,
+				17041D352BEA3F7600AFA255 /* UIColor + Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,7 +376,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -401,7 +409,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
