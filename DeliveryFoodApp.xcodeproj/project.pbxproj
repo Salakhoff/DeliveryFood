@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		17041CE32BE9192B00AFA255 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17041CE22BE9192B00AFA255 /* AppDelegate.swift */; };
 		17041CE52BE9192B00AFA255 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17041CE42BE9192B00AFA255 /* SceneDelegate.swift */; };
-		17041CE72BE9192B00AFA255 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17041CE62BE9192B00AFA255 /* ViewController.swift */; };
+		17041CE72BE9192B00AFA255 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17041CE62BE9192B00AFA255 /* OnboardingViewController.swift */; };
 		17041CEC2BE9192C00AFA255 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17041CEB2BE9192C00AFA255 /* Assets.xcassets */; };
 		17041CEF2BE9192C00AFA255 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 17041CEE2BE9192C00AFA255 /* Base */; };
 		17041D222BEA20CF00AFA255 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17041D152BEA20CF00AFA255 /* Roboto-Black.ttf */; };
@@ -27,12 +27,24 @@
 		17041D312BEA357D00AFA255 /* UIFont + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17041D302BEA357D00AFA255 /* UIFont + Extension.swift */; };
 		17041D352BEA3F7600AFA255 /* UIColor + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17041D342BEA3F7600AFA255 /* UIColor + Extension.swift */; };
 		17041D372BEA417B00AFA255 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17041D362BEA417B00AFA255 /* AppColors.swift */; };
+		17041D3C2BEA463F00AFA255 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17041D3B2BEA463F00AFA255 /* Coordinator.swift */; };
+		17041D3E2BEA4D7C00AFA255 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17041D3D2BEA4D7C00AFA255 /* AppCoordinator.swift */; };
+		17041D402BEA500300AFA255 /* OnboardingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17041D3F2BEA500300AFA255 /* OnboardingCoordinator.swift */; };
+		17041D422BEA588200AFA255 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17041D412BEA588200AFA255 /* HomeCoordinator.swift */; };
+		17041D442BEA589F00AFA255 /* OrderCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17041D432BEA589F00AFA255 /* OrderCoordinator.swift */; };
+		17041D462BEA58A800AFA255 /* ListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17041D452BEA58A800AFA255 /* ListCoordinator.swift */; };
+		17041D482BEA58B100AFA255 /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17041D472BEA58B100AFA255 /* ProfileCoordinator.swift */; };
+		17041D4A2BEA595800AFA255 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17041D492BEA595800AFA255 /* HomeViewController.swift */; };
+		17041D4C2BEA596500AFA255 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17041D4B2BEA596500AFA255 /* OrderViewController.swift */; };
+		17041D4E2BEA596D00AFA255 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17041D4D2BEA596D00AFA255 /* ListViewController.swift */; };
+		17041D502BEA597500AFA255 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17041D4F2BEA597500AFA255 /* ProfileViewController.swift */; };
+		17041D522BEA5A0300AFA255 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17041D512BEA5A0300AFA255 /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		17041CE22BE9192B00AFA255 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17041CE42BE9192B00AFA255 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		17041CE62BE9192B00AFA255 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		17041CE62BE9192B00AFA255 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		17041CEB2BE9192C00AFA255 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17041CEE2BE9192C00AFA255 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17041CF02BE9192C00AFA255 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -52,6 +64,18 @@
 		17041D322BEA375300AFA255 /* DeliveryFoodApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeliveryFoodApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17041D342BEA3F7600AFA255 /* UIColor + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Extension.swift"; sourceTree = "<group>"; };
 		17041D362BEA417B00AFA255 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		17041D3B2BEA463F00AFA255 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		17041D3D2BEA4D7C00AFA255 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		17041D3F2BEA500300AFA255 /* OnboardingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinator.swift; sourceTree = "<group>"; };
+		17041D412BEA588200AFA255 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		17041D432BEA589F00AFA255 /* OrderCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCoordinator.swift; sourceTree = "<group>"; };
+		17041D452BEA58A800AFA255 /* ListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCoordinator.swift; sourceTree = "<group>"; };
+		17041D472BEA58B100AFA255 /* ProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
+		17041D492BEA595800AFA255 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		17041D4B2BEA596500AFA255 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		17041D4D2BEA596D00AFA255 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		17041D4F2BEA597500AFA255 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		17041D512BEA5A0300AFA255 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,10 +100,10 @@
 		17041CE12BE9192B00AFA255 /* DeliveryFoodApp */ = {
 			isa = PBXGroup;
 			children = (
+				17041D382BEA45F900AFA255 /* NavigationLayer */,
 				17041D132BEA209400AFA255 /* Resources */,
 				17041CE22BE9192B00AFA255 /* AppDelegate.swift */,
 				17041CE42BE9192B00AFA255 /* SceneDelegate.swift */,
-				17041CE62BE9192B00AFA255 /* ViewController.swift */,
 				17041CEB2BE9192C00AFA255 /* Assets.xcassets */,
 				17041CED2BE9192C00AFA255 /* LaunchScreen.storyboard */,
 				17041CF02BE9192C00AFA255 /* Info.plist */,
@@ -131,6 +155,42 @@
 				17041D342BEA3F7600AFA255 /* UIColor + Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		17041D382BEA45F900AFA255 /* NavigationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				17041D3A2BEA462300AFA255 /* Coordinators */,
+				17041D392BEA461D00AFA255 /* Controllers */,
+			);
+			path = NavigationLayer;
+			sourceTree = "<group>";
+		};
+		17041D392BEA461D00AFA255 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				17041CE62BE9192B00AFA255 /* OnboardingViewController.swift */,
+				17041D492BEA595800AFA255 /* HomeViewController.swift */,
+				17041D4B2BEA596500AFA255 /* OrderViewController.swift */,
+				17041D4D2BEA596D00AFA255 /* ListViewController.swift */,
+				17041D4F2BEA597500AFA255 /* ProfileViewController.swift */,
+				17041D512BEA5A0300AFA255 /* TabBarController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		17041D3A2BEA462300AFA255 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				17041D3B2BEA463F00AFA255 /* Coordinator.swift */,
+				17041D3D2BEA4D7C00AFA255 /* AppCoordinator.swift */,
+				17041D3F2BEA500300AFA255 /* OnboardingCoordinator.swift */,
+				17041D412BEA588200AFA255 /* HomeCoordinator.swift */,
+				17041D432BEA589F00AFA255 /* OrderCoordinator.swift */,
+				17041D452BEA58A800AFA255 /* ListCoordinator.swift */,
+				17041D472BEA58B100AFA255 /* ProfileCoordinator.swift */,
+			);
+			path = Coordinators;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,12 +279,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17041D482BEA58B100AFA255 /* ProfileCoordinator.swift in Sources */,
 				17041D312BEA357D00AFA255 /* UIFont + Extension.swift in Sources */,
-				17041CE72BE9192B00AFA255 /* ViewController.swift in Sources */,
+				17041D3E2BEA4D7C00AFA255 /* AppCoordinator.swift in Sources */,
+				17041D522BEA5A0300AFA255 /* TabBarController.swift in Sources */,
+				17041CE72BE9192B00AFA255 /* OnboardingViewController.swift in Sources */,
 				17041CE32BE9192B00AFA255 /* AppDelegate.swift in Sources */,
+				17041D4A2BEA595800AFA255 /* HomeViewController.swift in Sources */,
+				17041D402BEA500300AFA255 /* OnboardingCoordinator.swift in Sources */,
+				17041D502BEA597500AFA255 /* ProfileViewController.swift in Sources */,
 				17041D372BEA417B00AFA255 /* AppColors.swift in Sources */,
+				17041D442BEA589F00AFA255 /* OrderCoordinator.swift in Sources */,
 				17041CE52BE9192B00AFA255 /* SceneDelegate.swift in Sources */,
+				17041D462BEA58A800AFA255 /* ListCoordinator.swift in Sources */,
+				17041D4C2BEA596500AFA255 /* OrderViewController.swift in Sources */,
+				17041D422BEA588200AFA255 /* HomeCoordinator.swift in Sources */,
 				17041D352BEA3F7600AFA255 /* UIColor + Extension.swift in Sources */,
+				17041D4E2BEA596D00AFA255 /* ListViewController.swift in Sources */,
+				17041D3C2BEA463F00AFA255 /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
