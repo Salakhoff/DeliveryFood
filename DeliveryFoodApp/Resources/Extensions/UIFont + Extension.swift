@@ -1,7 +1,7 @@
 import UIKit
 
 extension UIFont {
-    ///Добавление навых шрифтов
+    ///Выбор кастомного шрифта.
     enum Roboto {
         enum black {
             static func size(of size: CGFloat) -> UIFont {
@@ -72,7 +72,7 @@ extension UIFont {
 }
 
 private extension UIFont {
-    /// Константы, которые не изменятся. 
+    ///Работа с кастомными шрифтами. Тут указываются шрифты, которые есть.
     enum Constants {
         enum Roboto {
             static let black = "Roboto-Black"

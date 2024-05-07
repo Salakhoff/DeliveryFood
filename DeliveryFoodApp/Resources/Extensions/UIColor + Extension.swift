@@ -1,6 +1,9 @@
 import UIKit
 
 extension UIColor {
+    /// Для работы с hex данными
+    /// - Parameter rgbValue: Передается число Hex. Обязательно с добавлением 0x.
+    /// - Returns: Возврощается цвет
     func hex(_ rgbValue: UInt64) -> UIColor {
         UIColor(
             red: CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0,
