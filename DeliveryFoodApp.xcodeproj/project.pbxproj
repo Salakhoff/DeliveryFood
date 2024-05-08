@@ -44,6 +44,8 @@
 		17041D5A2BEA7C0700AFA255 /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17041D592BEA7C0700AFA255 /* OnboardingModel.swift */; };
 		17041D5D2BEAAA5400AFA255 /* UserStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17041D5C2BEAAA5400AFA255 /* UserStorage.swift */; };
 		17041D602BEAADEB00AFA255 /* SceneFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17041D5F2BEAADEB00AFA255 /* SceneFactory.swift */; };
+		17041D632BEB2D5900AFA255 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17041D622BEB2D5900AFA255 /* LoginViewController.swift */; };
+		17041D682BEB2E0500AFA255 /* BottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17041D672BEB2E0500AFA255 /* BottomView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +88,8 @@
 		17041D592BEA7C0700AFA255 /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
 		17041D5C2BEAAA5400AFA255 /* UserStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStorage.swift; sourceTree = "<group>"; };
 		17041D5F2BEAADEB00AFA255 /* SceneFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneFactory.swift; sourceTree = "<group>"; };
+		17041D622BEB2D5900AFA255 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ../LoginViewController.swift; sourceTree = "<group>"; };
+		17041D672BEB2E0500AFA255 /* BottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,13 +211,14 @@
 		17041D532BEA692600AFA255 /* UILayer */ = {
 			isa = PBXGroup;
 			children = (
+				17041D612BEB2D2200AFA255 /* AuthScene */,
 				17041D5E2BEAADCE00AFA255 /* SceneFactory */,
-				17041D542BEA6A0000AFA255 /* Onboarding */,
+				17041D542BEA6A0000AFA255 /* OnboardingScene */,
 			);
 			path = UILayer;
 			sourceTree = "<group>";
 		};
-		17041D542BEA6A0000AFA255 /* Onboarding */ = {
+		17041D542BEA6A0000AFA255 /* OnboardingScene */ = {
 			isa = PBXGroup;
 			children = (
 				17041CE62BE9192B00AFA255 /* OnboardingViewController.swift */,
@@ -221,7 +226,7 @@
 				17041D572BEA760300AFA255 /* OnboardingPartViewController.swift */,
 				17041D592BEA7C0700AFA255 /* OnboardingModel.swift */,
 			);
-			path = Onboarding;
+			path = OnboardingScene;
 			sourceTree = "<group>";
 		};
 		17041D5B2BEAAA3700AFA255 /* ServicesLayer */ = {
@@ -238,6 +243,39 @@
 				17041D5F2BEAADEB00AFA255 /* SceneFactory.swift */,
 			);
 			path = SceneFactory;
+			sourceTree = "<group>";
+		};
+		17041D612BEB2D2200AFA255 /* AuthScene */ = {
+			isa = PBXGroup;
+			children = (
+				17041D662BEB2DF200AFA255 /* Presenters */,
+				17041D652BEB2DED00AFA255 /* Controllers */,
+				17041D642BEB2DE900AFA255 /* Views */,
+			);
+			path = AuthScene;
+			sourceTree = "<group>";
+		};
+		17041D642BEB2DE900AFA255 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				17041D672BEB2E0500AFA255 /* BottomView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		17041D652BEB2DED00AFA255 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				17041D622BEB2D5900AFA255 /* LoginViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		17041D662BEB2DF200AFA255 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenters;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -338,6 +376,7 @@
 				17041D372BEA417B00AFA255 /* AppColors.swift in Sources */,
 				17041D582BEA760300AFA255 /* OnboardingPartViewController.swift in Sources */,
 				17041D5A2BEA7C0700AFA255 /* OnboardingModel.swift in Sources */,
+				17041D632BEB2D5900AFA255 /* LoginViewController.swift in Sources */,
 				17041D442BEA589F00AFA255 /* OrderCoordinator.swift in Sources */,
 				17041CE52BE9192B00AFA255 /* SceneDelegate.swift in Sources */,
 				17041D5D2BEAAA5400AFA255 /* UserStorage.swift in Sources */,
@@ -349,6 +388,7 @@
 				17041D352BEA3F7600AFA255 /* UIColor + Extension.swift in Sources */,
 				17041D4E2BEA596D00AFA255 /* ListViewController.swift in Sources */,
 				17041D3C2BEA463F00AFA255 /* Coordinator.swift in Sources */,
+				17041D682BEB2E0500AFA255 /* BottomView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
