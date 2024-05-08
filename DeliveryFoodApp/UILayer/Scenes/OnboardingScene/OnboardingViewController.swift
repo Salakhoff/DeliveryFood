@@ -15,7 +15,7 @@ final class OnboardingViewController: UIViewController {
         navigationOrientation: .horizontal
     )
     private let pageControl = UIPageControl()
-    private let nextButton = UIButton(type: .system)
+    private let nextButton = FDButton(buttonScheme: .white, title: "Next")
     
     // MARK: Init
     
@@ -38,7 +38,7 @@ final class OnboardingViewController: UIViewController {
         setupBehaviour()
         setupLayout()
         
-        nextButton.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
+        nextButton.action = buttonTapped
     }
 }
 
@@ -67,13 +67,6 @@ private extension OnboardingViewController {
         pageControl.currentPage = 0
         pageControl.translatesAutoresizingMaskIntoConstraints = false
         pageControl.isUserInteractionEnabled = false
-        
-        nextButton.translatesAutoresizingMaskIntoConstraints = false
-        nextButton.backgroundColor = AppColors.gray
-        nextButton.titleLabel?.font = .Roboto.bold.size(of: 18)
-        nextButton.setTitleColor(AppColors.black, for: .normal)
-        nextButton.setTitle("Next", for: .normal)
-        nextButton.layer.cornerRadius = 12
     }
 }
 
@@ -121,11 +114,11 @@ private extension OnboardingViewController {
         )
         
         if pageControl.currentPage != pages.count - 1 {
-            nextButton.setTitle("Next", for: .normal)
+            nextButton.setTitle("Next")
             return
         }
         
-        nextButton.setTitle("Start", for: .normal)
+        nextButton.setTitle("Start")
     }
 }
 
@@ -180,11 +173,11 @@ extension OnboardingViewController: UIPageViewControllerDelegate {
             pageControl.currentPage = currentPageIndex
             
             if currentPageIndex != pages.count - 1 {
-                nextButton.setTitle("Next", for: .normal)
+                nextButton.setTitle("Next")
                 return
             }
             
-            nextButton.setTitle("Start", for: .normal)
+            nextButton.setTitle("Start")
         }
     }
 }

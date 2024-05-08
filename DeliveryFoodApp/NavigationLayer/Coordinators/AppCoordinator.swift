@@ -10,6 +10,7 @@ final class AppCoordinator: Coordinator {
     
     /// Показывается, какой VC будет показан
     override func start() {
+        showOnboardingFlow()
 //        userStorage.passedOnboarding ?
 //        showMainFlow() : showOnboardingFlow()
         let loginVC = LoginViewController()

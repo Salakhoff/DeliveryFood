@@ -18,7 +18,7 @@ final class LoginViewController: UIViewController {
         bottomView.googleButtomAction = googleButtonTapped
     }
     
-    // Actions
+    // MARK: Actions
     
     private func facebookButtonTapped() {
         print("Нажали на facebook")
@@ -28,7 +28,6 @@ final class LoginViewController: UIViewController {
         print("Нажали на google")
     }
 }
-
 
 // MARK: - EmbedViews
 
@@ -60,8 +59,3 @@ private extension LoginViewController {
         ])
     }
 }
-
-#Preview("LoginViewController", traits: .defaultLayout, body: {
-    LoginViewController()
-})
-

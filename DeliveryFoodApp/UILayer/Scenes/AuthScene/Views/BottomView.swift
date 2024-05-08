@@ -116,7 +116,3 @@ private extension BottomView {
         googleButtomAction?()
     }
 }
-
-#Preview("BottomView", traits: .fixedLayout(width: 400, height: 150), body: {
-    BottomView()
-})

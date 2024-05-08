@@ -46,6 +46,7 @@
 		17041D602BEAADEB00AFA255 /* SceneFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17041D5F2BEAADEB00AFA255 /* SceneFactory.swift */; };
 		17041D632BEB2D5900AFA255 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17041D622BEB2D5900AFA255 /* LoginViewController.swift */; };
 		17041D682BEB2E0500AFA255 /* BottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17041D672BEB2E0500AFA255 /* BottomView.swift */; };
+		17041D6D2BEB464C00AFA255 /* FDButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17041D6C2BEB464C00AFA255 /* FDButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +91,7 @@
 		17041D5F2BEAADEB00AFA255 /* SceneFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneFactory.swift; sourceTree = "<group>"; };
 		17041D622BEB2D5900AFA255 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ../LoginViewController.swift; sourceTree = "<group>"; };
 		17041D672BEB2E0500AFA255 /* BottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomView.swift; sourceTree = "<group>"; };
+		17041D6C2BEB464C00AFA255 /* FDButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,9 +213,9 @@
 		17041D532BEA692600AFA255 /* UILayer */ = {
 			isa = PBXGroup;
 			children = (
-				17041D612BEB2D2200AFA255 /* AuthScene */,
-				17041D5E2BEAADCE00AFA255 /* SceneFactory */,
-				17041D542BEA6A0000AFA255 /* OnboardingScene */,
+				17041D6B2BEB453400AFA255 /* Views */,
+				17041D6A2BEB44AF00AFA255 /* Scenes */,
+				17041D692BEB448D00AFA255 /* Factory */,
 			);
 			path = UILayer;
 			sourceTree = "<group>";
@@ -276,6 +278,31 @@
 			children = (
 			);
 			path = Presenters;
+			sourceTree = "<group>";
+		};
+		17041D692BEB448D00AFA255 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				17041D5E2BEAADCE00AFA255 /* SceneFactory */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		17041D6A2BEB44AF00AFA255 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				17041D612BEB2D2200AFA255 /* AuthScene */,
+				17041D542BEA6A0000AFA255 /* OnboardingScene */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		17041D6B2BEB453400AFA255 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				17041D6C2BEB464C00AFA255 /* FDButton.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -389,6 +416,7 @@
 				17041D4E2BEA596D00AFA255 /* ListViewController.swift in Sources */,
 				17041D3C2BEA463F00AFA255 /* Coordinator.swift in Sources */,
 				17041D682BEB2E0500AFA255 /* BottomView.swift in Sources */,
+				17041D6D2BEB464C00AFA255 /* FDButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
